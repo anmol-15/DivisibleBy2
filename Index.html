@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divisible</title>
+</head>
+<body style="margin-top: 10%;">
+    <center>
+    <h3> Lets find out if your number is divisible by 2 </h3>
+    <input type="text" id="n">
+    <button onclick="check()"> Check </button>
+    <p id="num" style="color: blue;"> </p> <p id="nu" style="color: red;"> </p>
+    </center>
+    <script>
+    function check () {
+    var Num1 = parseFloat(document.getElementById("n").value)
+    if(Num1 % 2 == 0 ) {
+        document.getElementById("num").innerHTML=(Num1 + " is divisible by 2 " )
+        // document.write(Num1 + " is divisible by 2 ")
+    }
+    else{
+        document.getElementById("nu").innerHTML=(Num1 + " is not divisible by 2 " )
+    //     document.write(Num1 + " is not divisible by 2 ")
+    }
+}
+    </script>
+
+</body>
+</html>
